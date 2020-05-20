@@ -1,0 +1,11 @@
+
+<h1> All Departments </h1>
+
+<%= link_to 'Create New Department', new_department_path %>
+
+<% @department.each do |department| %>
+  <h2> <%= department.name %>  </h2>
+  <%= link_to 'Edit Department', edit_department_path(department)%>
+  <%= link_to 'Show Department', department_path(department)%>
+  <%= link_to 'Delete Department', department, method: :delete %>
+  <% end %>

@@ -1,0 +1,2 @@
+module DepartmentsHelper DepartmentStore
+end
